@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<h1>Login Page</h1>
+<h1>4aCause Login</h1>
 
 <div id="container-login">
-  <form action="dashboard.html">
+  <form id="myForm" action="dashboard.html">
     <label for="uname">User Name*</label>
     <input type="text" id="uname" name="username" placeholder="User Name...">
 
@@ -25,10 +25,10 @@
     <br>
 
     <input id="submit" type="submit" value="Submit">
-    <input id="reset" type="submit" value="Reset">
+    <input id="reset" type="reset" value="Reset">
 
     <p>*Create new user account:</p>
-    <input id="createnew" type="submit" value="Create New Account">
+    <input id="createnew" type="button" onclick="window.location.href = 'newuserform.html';" value="Create New Account">
   </form>
 </div>
 
