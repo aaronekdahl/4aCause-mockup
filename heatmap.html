@@ -9,59 +9,97 @@
 <body>
 
 <h1>Heat Map Data</h1>
+<div class="form-wrapper">
+  <p>Location ID:</p>
+    <form class="get-option" action="action_form.php" method="get">
+      <input type = "text" list = "locations" name="locations" placeholder="Click to select Location ID">
+      <datalist id = "locations">
+        <option value = "L-0001">
+        <option value = "L-0002">
+        <option value = "L-0003">
+        <option value = "L-0004">
+      </datalist>
+      <input type = "submit" value = "Confirm">
+      <input type = "reset" value = "Reset">
+    </form>
 
-<div id="construction">
-  <img src="images/construction.jpg" alt="under construction image">
+  <br>
+
+  <p>Continent:</p>
+    <form class="get-option"  action="action_form.php" method="get">
+      <input type = "text" list = "continents" name="continents" placeholder="Click to select Continent">
+      <datalist id = "continents">
+        <option value = "Asia">
+        <option value = "Africa">
+        <option value = "North America">
+        <option value = "South America">
+        <option value = "Europe">
+        <option value = "Oceania">
+        <option value = "Antarctica">
+      </datalist>
+      <input type = "submit" value = "Confirm">
+      <input type = "reset" value = "Reset">
+    </form>
+
+  <br>
+
+  <p>Division/Region:</p>
+    <form class="get-option" action="action_form.php" method="get">
+      <input type = "text" list = "divisions" name="divisions" placeholder="Click to select Division/Region">
+      <datalist id = "divisions">
+
+        <option value = "Guinea">
+        <option value = "Liberia">
+        <option value = "Mali">
+        <option value = "Senegal">
+        <option value = "Sierra Leone">
+        <option value = "Etc...">
+      </datalist>
+      <input type = "submit" value = "Confirm">
+      <input type = "reset" value = "Reset">
+    </form>
+
+    <br>
+
+    <p>Disease:</p>
+      <form class="get-option" action="action_form.php" method="get">
+        <input type = "text" list = "diseases" name="diseases" placeholder="Click to select Disease">
+        <datalist id = "diseases">
+          <option value = "Cholera">
+          <option value = "Dysentary">
+          <option value = "Malaria">
+          <option value = "Measles">
+          <option value = "Etc...">
+        </datalist>
+        <input type = "submit" value = "Confirm">
+        <input type = "reset" value = "Reset">
+      </form>
+
+      <br>
+
+  <p>Vaccine:</p>
+    <form class="get-option" action="action_form.php" method="get">
+        <input type = "text" list = "vaccines" name="vaccines" placeholder="Click to select Vaccine ID">
+        <datalist id = "vaccines">
+          <option value = "4VAS 1">
+          <option value = "4VAS 2">
+          <option value = "4VAS 3">
+          <option value = "4VAS 4">
+          <option value = "Etc...">
+        </datalist>
+        <input type = "submit" value = "Confirm">
+        <input type = "reset" value = "Reset">
+      </form>
+
+    <br>
+
+
 </div>
 
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select Continent:</option>
-    <option value="1">Asia</option>
-    <option value="2">Africa</option>
-    <option value="3">North America</option>
-    <option value="4">South America</option>
-    <option value="5">Europe</option>
-    <option value="6">Oceania</option>
-    <option value="7">Antarctica</option>
-  </select>
-</div>
+  <div class ="heatmap-wrapper">
+        <img src="images/heatmap.png" style="width:600px;height:600px;" alt="mockup heatmap image">
+  </div>
 
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select Division:</option>
-    <option value="1">Alabama</option>
-    <option value="2">Alaska</option>
-    <option value="3">Arizona</option>
-    <option value="4">Arkansas</option>
-    <option value="5">Texas</option>
-    <option value="6">Washington</option>
-    <option value="7">Etc...</option>
-  </select>
-</div>
-
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select Disease Type:</option>
-    <option value="1">Cholera/option>
-    <option value="2">Dysentary</option>
-    <option value="3">Malaria</option>
-    <option value="4">Measles</option>
-    <option value="5">Legionnaire's Disease</option>
-    <option value="6">Etc...</option>
-  </select>
-</div>
-
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Select Vaccine ID:</option>
-    <option value="1">4VAS 1</option>
-    <option value="2">4VAS 2</option>
-    <option value="3">4VAS 3</option>
-    <option value="4">4VAS 4</option>
-    <option value="5">Etc...</option>
-  </select>
-</div>
 
 </body>
 </html>
