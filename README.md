@@ -1,4 +1,4 @@
-# 4aCause-mockup
+# 4aCause Web Application Mockup
 
 ## Scenario
 Developing for a Cause: You and your buddies won a multi-million dollar grant from a
