@@ -191,4 +191,10 @@ nav li {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 151px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
 }
