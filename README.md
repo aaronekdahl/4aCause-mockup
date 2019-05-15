@@ -6,6 +6,7 @@ foundation to develop system to address current global health challenges. Your f
 is expected to demonstrate significant positive impact on the health of the people residing in
 developing countries.
 
+## System Description
 Your system will generate essential analytical data to immediately benefit vaccine
 distribution and administration programs. Examples of specific data such as vaccine
 inventory and number of doses of vaccines delivered to sites and given are displayed in the
