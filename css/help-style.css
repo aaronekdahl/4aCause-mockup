@@ -162,9 +162,14 @@ transform: translateY(4px);
 
 }
 
-
-
 .option-help a:visited {
   text-decoration: none;
   color: white;
+}
+
+.select-instructions {
+  position: absolute;
+  margin-bottom: 375px;
+  font-size: 26px;
+  font-weight: 300;
 }
