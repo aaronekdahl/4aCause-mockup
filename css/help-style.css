@@ -113,58 +113,11 @@ h1 {
   border: 1px solid #171717;
 }
 
-.dashboard {
+.help-dashboard {
   display: grid;
   grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 100px 100px 100px 30px;
+  grid-template-rows: 100px 100px 30px;
   grid-gap: 1rem;
-}
-
-.option {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  background-color: #008CBA;
-  color: #fff;
-  border-radius: 4px;
-  border: 1px solid #171717;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 36px;
-  font-size: 20px;
-  opacity: 1;
-  transition: 0.15s;
-}
-
-.option:hover {
-  background-color: #006282;
-}
-
-.option:active {
-  background-color: #006282;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.option a {
-  text-decoration: none;
-  color: white;
-  z-index: 10;
-
-}
-
-.option a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-#newActivityBadge, #newActivityNotify {
-  font-size: 11px;
-  padding-top: 20px;
-}
-
-.on-off {
-  font-size: 22px;
-  font-weight: 600;
 }
 
 #logout {
@@ -177,42 +130,41 @@ h1 {
   font-size: 12px;
 }
 
-.get-option {
-  width: 250px;
-  max-width: 100%;
-}
-
-.form-wrapper {
-  width: 25%;
-  float: left;
-  padding-left: 10px;
-}
-
-.heatmap-wrapper {
-  margin: 0;
-  padding: 0;
-}
-
-.heatmap-wrapper img {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul {
-  padding: 0;
-}
-
-nav li {
-  background-color: #008CBA;
-  color: white;
-  padding: 12px 20px;
-  border: none;
+/* help dashboard styles */
+.option-help {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: #14c581;
+  color: #fff;
   border-radius: 4px;
-  cursor: pointer;
-  width: 200px;
+  border: 1px solid #171717;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 36px;
+  font-size: 20px;
+  opacity: 1;
+  transition: 0.15s;
 }
 
-nav li a {
+.option-help:hover {
+  background-color: #0e895a;
+}
+
+.option-help:active {
+background-color: #0e895a;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.option-help a {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+
+.option-help a:visited {
   text-decoration: none;
   color: white;
 }

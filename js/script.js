@@ -6,3 +6,8 @@ for (var i=0; i<checkboxes.length; i++)  {
     checkboxes[i].checked = false;
   }
 }
+
+$(".option").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});
