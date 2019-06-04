@@ -21,7 +21,7 @@ and managers.
 
 ## System Documentation
 
-### Implemenation Plan
+### Implementation Plan
 
 ### Maintenance Plan
 
