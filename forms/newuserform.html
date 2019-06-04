@@ -11,19 +11,22 @@
 <h1>New User Form</h1>
 
 <div id="container-login">
-  <form id="myForm" action="dashboard.html">
-    <label for="uname">Create User Name:</label>
-    <input type="text" id="uname" name="username" placeholder="User Name...">
+  <form id="myForm" action="post">
+    <label for="userid">Enter Your Name:</label>
+    <input type="text" id="fname" name="first_name" placeholder="First name...">
+    <input type="text" id="lname" name="last_name" placeholder="Last name">
 
-    <label for="pword">Create Password:</label>
-    <input type="text" id="pword" name="password" placeholder="Password...">
+    <label for="password">Create Password:</label>
+    <input type="text" id="pword1" name="pass1" placeholder="Password">
+    <label for="pass">Confirm Password:</label>
+    <input type="text" id="pword2" name="pass2" placeholder="Confirm password">
 <br>
 <br>
     <input id="submit" type="submit" value="Submit">
     <input id="reset" type="reset" value="Reset">
 <br>
 <br>
-    <input id="createnew" type="button" onclick="window.location.href = 'index.html';" value="Return to Login Page">
+    <input id="returntodashboard" type="button" onclick="window.location.href = '../index.html';" value="Return to Login Page">
 
 
   </form>
