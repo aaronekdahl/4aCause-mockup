@@ -1,5 +1,7 @@
 # 4aCause Web Application Mockup
 
+![](/images/readmeheader.png)
+
 ## Scenario
 Developing for a Cause: You and your buddies won a multi-million dollar grant from a
 foundation to develop system to address current global health challenges. Your final system
