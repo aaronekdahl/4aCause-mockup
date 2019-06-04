@@ -36,7 +36,7 @@ and managers.
 ### Presentations
 
 
-### Presenatation Materials
+### Presentation Materials
 
 ## Authors
 
