@@ -2,22 +2,41 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/inventory-style.css">
+<link rel="stylesheet" href="../css/administer-style.css">
 <script src="js/script.js"></script>
-<title>4aCause Inventory</title>
+<title>4aCause Administration</title>
 </head>
 <body>
 
-<h1>Order New Inventory Form</h1>
+<h1>Enter Administration Event Form</h1>
 
-<div id="inventory-container">
-  <form id="inventoryForm" action="submissionsuccess.html">
+<div id="administer-container">
+  <form id="inventoryForm" action="../submissionsuccess.html">
 
-    <label for="dob">Inventory Request Date:</label>
-    <br><br>
-    <input type="date" id="dob" name="dateofbirth">
+    <label for="dov">Vaccine Administration Date:</label>
+    <br>
+    <br>
+    <input type="date" id="dov" name="dateofvaccination">
 <br>
 <br>
+
+<label for="eid">Select Your Employee ID:</label>
+<input type = "text" list = "eid" name="eid" placeholder="Select Employee ID">
+<datalist id = "eid">
+<option value = "EID-0001">
+<option value = "EID-0002">
+<option value = "EID-0003">
+<option value = "EID-0004">
+</datalist>
+
+<label for="fname">Enter Patient First Name:</label>
+<input type="text" id="fname" name="firstname" placeholder="First Name...">
+
+<label for="lname">Enter Last Name:</label>
+<input type="text" id="lname" name="lastname" placeholder="Last Name...">
+
+<label for="pid">Enter Patient ID#:</label>
+<input type="text" id="pid" name="patientID" placeholder="Patient ID...">
 
 <label for="plocation">Select Vaccine ID:</label>
 <input type = "text" list = "vaccines" name="vaccines" placeholder="Select Vaccine ID">
@@ -46,15 +65,6 @@
 <option value = "L-0004">
 </datalist>
 
-<label for="vcode">Select Vendor ID:</label>
-<input type = "text" list = "vcode" name="vendorcode" placeholder="Select Vendor ID...">
-<datalist id = "vcode">
-<option value = "V-0001">
-<option value = "V-0002">
-<option value = "V-0003">
-<option value = "V-0004">
-</datalist>
-
 <br>
 <br>
 
@@ -66,7 +76,7 @@
 <br>
 
 <div class="return-center">
-  <input id="returntodashboard" type="button" onclick="window.location.href = 'dashboard.html';" value="Return to Dashboard">
+  <input id="returntodashboard" type="button" onclick="window.location.href = '../dashboard.html';" value="Return to Dashboard">
 </div>
 
 

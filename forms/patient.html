@@ -2,33 +2,33 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/patient-style.css">
+<link rel="stylesheet" href="../css/patient-style.css">
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-<title>4aCause Patient Report</title>
+<title>4aCause Locations</title>
 </head>
 <body>
 
-<h1>Create Patient Report</h1>
+<h1>Enter New Patient Form</h1>
 
 <div id="patient-container">
-  <form id="patientForm" action="patient.html">
+  <form id="patientForm" action="../submissionsuccess.html">
 
-    <label for="fname">Enter Patient First Name:</label>
+    <label for="fname">Patient First Name:</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name...">
 
-    <label for="lname">Enter Patient Last Name:</label>
+    <label for="lname">Patient Last Name:</label>
     <input type="text" id="lname" name="lastname" placeholder="Last Name...">
 
-    <label for="pid">Enter Patient ID#:</label>
+    <label for="pid">Patient ID#:</label>
     <input type="text" id="pid" name="patientID" placeholder="Patient ID...">
 <br>
-<br>
-    <label for="dob">Select Patient Birthdate:</label>
+    <label for="dob">Patient Birthdate:</label>
+    <br>
     <input type="date" id="dob" name="dateofbirth">
 <br>
 <br>
-    <label for="plocation">Enter Patient Address/Region:</label>
+    <label for="plocation">Patient Address/Region:</label>
     <input type="text" id="plocation" name="patient location" placeholder="Patient Location...">
 
       <label for="plocation">Select Vaccine ID:</label>
@@ -44,12 +44,11 @@
     <div class="submit-center">
     <input id="submit" type="submit" value="Submit">
     <input id="reset" type="reset" value="Reset">
-    </div>
+  </div>
 <br>
     <div class="return-center">
-    <input id="button" type="button" value="Return to Reports Page" onclick="location.href= 'reports.html'">
-    <input id="button" type="button" value="Return to Dashboard" onclick="location.href='dashboard.html'">
-  </div>
+      <input id="returntodashboard" type="button" onclick="window.location.href = '../dashboard.html';" value="Return to Dashboard">
+    </div>
 
 
   </form>
