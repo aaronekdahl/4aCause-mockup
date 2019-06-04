@@ -2,16 +2,35 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/report-style.css">
 <script src="js/script.js"></script>
 <title>4aCause Reporting</title>
 </head>
 <body>
 
-<h1>Report Data</h1>
+<h1>Generate Reports</h1>
 
-<div id="construction">
-  <img src="images/construction.jpg" alt="under construction image">
+<div id="report-container">
+  <form id="reportsForm" action="reports.html">
+
+    <label for="rtype">Select Report Type:</label>
+    <input type = "text" list = "rtype" name="reporttype" placeholder="Report Type" onchange="location= this.value;">
+  <datalist id = "rtype">
+    <option value = "report-patient.html">Patient</option>
+    <option value = "report-inventory.html">Inventory</option>
+    <option value = "report-administration.html">Administration</option>
+    <option value = "report-distribution.html">Distribution</option>
+  </datalist>
+<br>
+    <div class="submit-center">
+    <input id="submit" type="submit" value="Submit">
+    <input id="reset" type="reset" value="Reset">
+  </div>
+<br>
+    <div class="return-center">
+      <input id="returntodashboard" type="button" onclick="window.location.href = 'dashboard.html';" value="Return to Dashboard">
+    </div>
+  </form>
 </div>
 
 </body>
