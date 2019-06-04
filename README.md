@@ -18,3 +18,27 @@ system will begin processing all available data and start building a list of rec
 on how to best optimize each distribution location and what centers to focus most on.
 Additional indicators can be programmed and added to system as needed by program staff
 and managers.
+
+## System Documentation
+
+### Implemenation Plan
+
+### Maintenance Plan
+
+### Rollout Plan
+
+### Test Plans
+
+### Training Plans
+
+### User Manuals
+
+### Presentations
+
+
+### Presenatation Materials
+
+## Authors
+
+* **Aaron Ekdahl** - *Site Mockup Creation & Github Integration*
+* **Angela Agnew** - *Site Documentation & Supporting Materials*
