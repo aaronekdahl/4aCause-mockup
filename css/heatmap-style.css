@@ -44,47 +44,19 @@ input[type=reset]:hover {
   background-color: #808080;
 }
 
-#submit {
-width: 175px;
+.submit {
+width: 122px;
+margin-bottom: 5px;
 }
 
-#reset {
+.reset {
   background-color: #008CBA;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 175px;
-}
-
-#button {
-  background-color: #008CBA;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 175px;
-}
-
-#returntodashboard {
-  background-color: #008CBA;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 355px;
-}
-
-#administration-container {
-  margin: auto;
-  width: 600px;
-  border-radius: 10px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border: 1px solid #171717;
+width: 122px;
 }
 
 h1 {
@@ -92,7 +64,35 @@ h1 {
   z-index: 1;
 }
 
-.submit-center, .return-center{
-margin: auto;
-width: 70%;
+#button {
+  background-color: #008CBA;
+  color: white;
+  padding: 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.get-option {
+  width: 250px;
+  max-width: 100%;
+}
+
+.form-wrapper {
+  width: 25%;
+  float: left;
+  padding-left: 10px;
+}
+
+.heatmapimg-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.heatmapimg-wrapper img {
+  margin: 0;
+  padding: 0;
 }

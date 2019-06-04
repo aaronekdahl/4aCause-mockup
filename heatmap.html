@@ -2,21 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/heatmap-style.css">
 <script src="js/script.js"></script>
 <title>Mockup - 4aCause Heat Map</title>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="dashboard.html">Back to Dashboard</a></li>
-    </ul>
-  </nav>
+<h1>Vaccine Distribution Heatmap</h1>
 
-<h1>Heat Map Data</h1>
 <div class="form-wrapper">
-  <p>Location ID:</p>
+  <p>Select Location ID:</p>
     <form class="get-option" action="action_form.php" method="get">
       <input type = "text" list = "locations" name="locations" placeholder="Click to select Location ID">
       <datalist id = "locations">
@@ -25,14 +20,12 @@
         <option value = "L-0003">
         <option value = "L-0004">
       </datalist>
-      <input type = "submit" value = "Confirm">
-      <input type = "reset" value = "Reset">
-    </form>
+      <input class="submit" type = "submit" value = "Submit">
+      <input class="reset" type = "reset" value = "Reset">
+<br>
+<br>
 
-  <br>
-
-  <p>Continent:</p>
-    <form class="get-option"  action="action_form.php" method="get">
+  <p>Select Location Name:</p>
       <input type = "text" list = "continents" name="continents" placeholder="Click to select Continent">
       <datalist id = "continents">
         <option value = "Asia">
@@ -43,68 +36,29 @@
         <option value = "Oceania">
         <option value = "Antarctica">
       </datalist>
-      <input type = "submit" value = "Confirm">
-      <input type = "reset" value = "Reset">
-    </form>
-
-  <br>
-
-  <p>Division/Region:</p>
-    <form class="get-option" action="action_form.php" method="get">
-      <input type = "text" list = "divisions" name="divisions" placeholder="Click to select Division/Region">
-      <datalist id = "divisions">
-
-        <option value = "Guinea">
-        <option value = "Liberia">
-        <option value = "Mali">
-        <option value = "Senegal">
-        <option value = "Sierra Leone">
-        <option value = "Etc...">
-      </datalist>
-      <input type = "submit" value = "Confirm">
-      <input type = "reset" value = "Reset">
-    </form>
-
-    <br>
-
-    <p>Disease:</p>
-      <form class="get-option" action="action_form.php" method="get">
-        <input type = "text" list = "diseases" name="diseases" placeholder="Click to select Disease">
-        <datalist id = "diseases">
-          <option value = "Cholera">
-          <option value = "Dysentary">
-          <option value = "Malaria">
-          <option value = "Measles">
-          <option value = "Etc...">
-        </datalist>
-        <input type = "submit" value = "Confirm">
-        <input type = "reset" value = "Reset">
-      </form>
-
+      <input class="submit" type = "submit" value = "Submit">
+      <input class="reset" type = "reset" value = "Reset">
+      <br>
       <br>
 
-  <p>Vaccine:</p>
-    <form class="get-option" action="action_form.php" method="get">
-        <input type = "text" list = "vaccines" name="vaccines" placeholder="Click to select Vaccine ID">
-        <datalist id = "vaccines">
-          <option value = "4VAS 1">
-          <option value = "4VAS 2">
-          <option value = "4VAS 3">
-          <option value = "4VAS 4">
-          <option value = "Etc...">
-        </datalist>
-        <input type = "submit" value = "Confirm">
-        <input type = "reset" value = "Reset">
-      </form>
+  <label for="locationdetails">Location Information:</label>
+  <textarea rows="30" cols="50">
+    <div>
+      Location Information:
+    </div>
+  </textarea>
 
-    <br>
-
-
+</form>
 </div>
 
-  <div class ="heatmap-wrapper">
+  <div class ="heatmapimg-wrapper">
         <img src="images/heatmap.png" style="width:600px;height:600px;" alt="mockup heatmap image">
+        <div class="return-center">
+        <input id="button" type="button" value="Return to Dashboard" onclick="location.href='dashboard.html'">
+        </div>
   </div>
+
+
 
 
 </body>

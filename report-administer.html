@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/administer-style.css">
 <script src="js/script.js"></script>
 <title>4aCause Administration</title>
 </head>
@@ -10,9 +10,77 @@
 
 <h1>Create Administration Report</h1>
 
-<div id="construction">
-  <img src="images/construction.jpg" alt="under construction image">
+<div id="administer-container">
+  <form id="administerForm" action="administer.html">
+
+    <label for="dov">Vaccine Administration Date</label>
+    <input type="date" id="dov" name="dateofvaccination">
+<br>
+<br>
+
+<label for="eid">Select Your EmployeeID</label>
+<input type = "text" list = "eid" name="eid" placeholder="Select Employee ID">
+<datalist id = "eid">
+<option value = "EID-0001">
+<option value = "EID-0002">
+<option value = "EID-0003">
+<option value = "EID-0004">
+</datalist>
+
+<label for="fname">Enter Patient First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="First Name...">
+
+<label for="lname">Enter Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Last Name...">
+
+<label for="pid">Enter Patient ID#</label>
+<input type="text" id="pid" name="patientID" placeholder="Patient ID...">
+
+<label for="plocation">Select Dropdown for Vaccine ID</label>
+<input type = "text" list = "vaccines" name="vaccines" placeholder="Select Vaccine ID">
+<datalist id = "vaccines">
+<option value = "V-0001">
+<option value = "V-0002">
+<option value = "V-0003">
+<option value = "V-0004">
+</datalist>
+
+<label for="vxcode">Select Dropdown for CVX/MVX Code</label>
+<input type = "text" list = "vxcode" name="vaccinecode" placeholder="Select CVX/MVX Code...">
+<datalist id = "vxcode">
+<option value = "CVX-0001">
+<option value = "CVX-0002">
+<option value = "MVX-0001">
+<option value = "MVX-0002">
+</datalist>
+
+<label for="lcode">Select Dropdown for Location</label>
+<input type = "text" list = "lcode" name="locationcode" placeholder="Select Location Code...">
+<datalist id = "lcode">
+<option value = "L-0001">
+<option value = "L-0002">
+<option value = "L-0003">
+<option value = "L-0004">
+</datalist>
+
+<br>
+<br>
+
+<div class="submit-center">
+<input id="submit" type="submit" value="Submit">
+<input id="reset" type="reset" value="Reset">
 </div>
+<br>
+<div class="return-center">
+<input id="button" type="button" value="Return to Reports Page" onclick="location.href= 'reports.html'">
+<input id="button" type="button" value="Return to Dashboard" onclick="location.href='dashboard.html'">
+</div>
+
+
+  </form>
+</div>
+
+
 
 </body>
 </html>
