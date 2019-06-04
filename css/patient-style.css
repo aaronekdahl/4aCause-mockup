@@ -58,6 +58,16 @@ width: 175px;
   width: 175px;
 }
 
+#button {
+  background-color: #008CBA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 175px;
+}
+
 #returntodashboard {
   background-color: #008CBA;
   color: white;
