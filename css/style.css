@@ -133,6 +133,7 @@ h1 {
   font-size: 20px;
   opacity: 1;
   transition: 0.15s;
+  text-decoration: none;
 }
 
 .option:hover {
@@ -148,13 +149,16 @@ h1 {
 .option a {
   text-decoration: none;
   color: white;
-  z-index: 10;
 
 }
 
 .option a:visited {
   text-decoration: none;
   color: white;
+}
+
+.option div {
+  text-decoration: none;
 }
 
 #newActivityBadge, #newActivityNotify {
