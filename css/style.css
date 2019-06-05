@@ -167,12 +167,13 @@ h1 {
 
 #logout {
   grid-column: span 3;
-  padding-top: 0px;
-  height:30px;
+  padding: 2px;
+  height:32px;
 }
 
 #logout a {
   font-size: 12px;
+  padding-top: 2px;
 }
 
 .get-option {
