@@ -7,59 +7,53 @@
 <title>Mockup - 4aCause Heat Map</title>
 </head>
 <body>
+<div class="wrapper">
+  <div class="form-wrapper">
+    <p>Select Location ID:</p>
+      <form class="get-option" action="action_form.php" method="get">
+        <input type = "text" list = "locations" name="locations" placeholder="Click to select Location ID">
+        <datalist id = "locations">
+          <option value = "L-0001">
+          <option value = "L-0002">
+          <option value = "L-0003">
+          <option value = "L-0004">
+        </datalist>
+        <input class="submit" type = "submit" value = "Submit">
+        <input class="reset" type = "reset" value = "Reset">
+  <br>
+  <br>
 
-<h1>Vaccine Distribution Heatmap</h1>
+    <p>Select Location Name:</p>
+        <input type = "text" list = "continents" name="continents" placeholder="Click to select Continent">
+        <datalist id = "continents">
+          <option value = "Asia">
+          <option value = "Africa">
+          <option value = "North America">
+          <option value = "South America">
+          <option value = "Europe">
+          <option value = "Oceania">
+          <option value = "Antarctica">
+        </datalist>
+        <input class="submit" type = "submit" value = "Submit">
+        <input class="reset" type = "reset" value = "Reset">
+        <br>
+        <br>
 
-<div class="form-wrapper">
-  <p>Select Location ID:</p>
-    <form class="get-option" action="action_form.php" method="get">
-      <input type = "text" list = "locations" name="locations" placeholder="Click to select Location ID">
-      <datalist id = "locations">
-        <option value = "L-0001">
-        <option value = "L-0002">
-        <option value = "L-0003">
-        <option value = "L-0004">
-      </datalist>
-      <input class="submit" type = "submit" value = "Submit">
-      <input class="reset" type = "reset" value = "Reset">
-<br>
-<br>
-
-  <p>Select Location Name:</p>
-      <input type = "text" list = "continents" name="continents" placeholder="Click to select Continent">
-      <datalist id = "continents">
-        <option value = "Asia">
-        <option value = "Africa">
-        <option value = "North America">
-        <option value = "South America">
-        <option value = "Europe">
-        <option value = "Oceania">
-        <option value = "Antarctica">
-      </datalist>
-      <input class="submit" type = "submit" value = "Submit">
-      <input class="reset" type = "reset" value = "Reset">
-      <br>
-      <br>
-
-  <label for="locationdetails">Location Information:</label>
-  <textarea rows="30" cols="50">
-    <div>
-      Location Information:
+    <label for="locationdetails">Location Information:</label>
+    <textarea rows="15" cols="40">
+      <div>
+        Location Information:
+      </div>
+    </textarea>
+    <input id="button" type="button" value="Return to Dashboard" onclick="location.href='dashboard.html'">
+    </form>
     </div>
-  </textarea>
 
-</form>
+    <div class ="heatmap-wrapper">
+      <h1>Vaccine Distribution Heatmap</h1>
+          <img src="images/heatmap.png" style="width:600px;height:600px;" alt="mockup heatmap image">
+    </div>
 </div>
-
-  <div class ="heatmapimg-wrapper">
-        <img src="images/heatmap.png" style="width:600px;height:600px;" alt="mockup heatmap image">
-        <div class="return-center">
-        <input id="button" type="button" value="Return to Dashboard" onclick="location.href='dashboard.html'">
-        </div>
-  </div>
-
-
-
 
 </body>
 </html>
