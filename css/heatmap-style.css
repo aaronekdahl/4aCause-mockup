@@ -92,11 +92,10 @@ img {
 .form-wrapper {
   width: 33%;
   float: left;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .heatmap-wrapper {
-  width: 66%;
-  position: absolute;
-  margin-left: 150px;
+  width: 50%;
+float: left;
 }
